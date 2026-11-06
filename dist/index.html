@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10111e">
+  <meta name="description" content="以出生時間與地點繪製個人星盤，探索十二星座與流年。所有資料保存在裝置中。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>星穹之書 | ASTRAL ATLAS</title>
+  <script defer src="./astronomy.min.js"></script>
+  <script defer src="./astro.js"></script>
+  <script defer src="./symbols.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="主要導覽">
+    <a class="brand" href="#home" data-view="home"><span class="brand-mark">✳</span><span><strong>星穹之書</strong><small>ASTRAL ATLAS</small></span></a>
+    <div class="side-caption">YOUR CELESTIAL GUIDE</div>
+    <nav id="side-nav" class="side-nav"></nav>
+    <div class="side-bottom"><div class="side-ornament">✧</div><span>一座屬於你的宇宙</span><small>寫在星空，也留在心中</small><p>✦ &nbsp; 資料僅儲存於此裝置</p></div>
+  </aside>
+  <div class="app-main">
+    <header class="topbar"><a class="brand mobile-brand" href="#home" data-view="home"><span class="brand-mark">✳</span><span><strong>星穹之書</strong><small>ASTRAL ATLAS</small></span></a><div class="breadcrumb" id="breadcrumb">探索你的星空</div><div class="top-right"><span class="offline-pill"><span></span> <span id="network-label">裝置端運算</span></span><button class="icon-button install-button" id="install-button" title="安裝應用程式" aria-label="安裝應用程式">↓</button></div></header>
+    <main id="app" class="content" aria-live="polite"><div class="loading">正在準備星空 ✧</div></main>
+    <footer class="footer"><span>✧ &nbsp; ASTRAL ATLAS</span><span>為探索自我而設計・以溫柔之心仰望星空</span></footer>
+  </div>
+</div>
+<nav id="mobile-nav" class="mobile-nav" aria-label="手機導覽"></nav>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="modal-root"></div>
+<input type="file" id="backup-input" accept="application/json,.json" hidden>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "id":"./",
+  "name":"星穹之書｜十二宮占星",
+  "short_name":"星穹之書",
+  "description":"你的隨身星盤與占星探索手冊",
+  "lang":"zh-Hant",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#10111e",
+  "theme_color":"#10111e",
+  "icons":[{"src":"./assets/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"./assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]
+}
