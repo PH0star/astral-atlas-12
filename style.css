@@ -6,3 +6,6 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 /* Allow wide tables to scroll inside their cards on narrow screens. */
 .result-grid,.result-top,.form-layout{min-width:0}.result-grid>* , .result-top>* , .form-layout>*{min-width:0}
+
+/* Keep zodiac details scrollable and preserve the full portrait on phones. */
+@media(max-width:560px){.modal{padding:12px}.modal-card{display:block;max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}.modal-card.sign-detail img{display:block;width:100%;height:auto;min-height:0;max-height:none;object-fit:contain}.modal-card .sign-detail-copy{padding:25px}}
